@@ -1,0 +1,64 @@
+
+.pantalla {
+    min-height: 100vh;
+    background-image: url('../img/fondo.jpg'); /* Prueba con ../ si está en una carpeta superior */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Tarjetas semi-transparentes */
+.card-transparente {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+}
+
+/* 📘 Menú Lateral */
+.menu-lateral {
+    width: 300px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    transition: left 0.3s ease-in-out;
+    padding: 20px;
+    z-index: 10;
+}
+
+.btn-menu {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-menu:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.btn-cerrar {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    float: right;
+    cursor: pointer;
+}
